@@ -79,8 +79,8 @@ def prob6():
     separate sets.
 
     Returns:
-        (set): the local minima.
-        (set): the local maxima.
+        (set): the local minimizers (x-values).
+        (set): the local maximizers (x-values).
     """
     raise NotImplementedError("Problem 6 Incomplete")
 
