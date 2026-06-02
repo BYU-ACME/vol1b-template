@@ -26,7 +26,7 @@ def diag_dom(n, num_entries=None, as_sparse=False):
     if num_entries is None:
         num_entries = int(n**1.5) - n
     
-    A = sparse.lil_matrix((n,n))
+    A = sparse.lil_matrix((n, n))
     rows = np.random.choice(n, size=num_entries)
     cols = np.random.choice(n, size=num_entries)
     data = np.random.randint(-4, 4, size=num_entries)
