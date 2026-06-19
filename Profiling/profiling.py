@@ -13,8 +13,7 @@ import time
 import numpy as np
 from math import sqrt
 from numba import jit
-from matplotlib import pyplot as plt
-
+from matplotlib import pyplot as plt # test mid semester update
 
 # Problem 1
 def max_path(filename="triangle.txt"):
@@ -35,7 +34,7 @@ def max_path(filename="triangle.txt"):
 
     return path_sum(0, 0, 0)            # Start the recursion from the top.
 
-def max_path_fast(filename="triangle_large.txt"):
+def max_path_fast(filename="triangle_large.txt", best=0):
     """Find the maximum vertical path in a triangle of values."""
     raise NotImplementedError("Problem 1 Incomplete")
 
