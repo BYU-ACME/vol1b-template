@@ -27,7 +27,7 @@ def ball_volume(n, N=10000):
 
 # Problem 2
 def mc_integrate1d(f, a, b, N=10000):
-    """Approximate the integral of f on the interval [a,b].
+    """Approximate the integral of f on the interval [a, b].
 
     Parameters:
         f (function): the function to integrate. Accepts and returns scalars.
@@ -61,10 +61,10 @@ def mc_integrate(f, mins, maxs, N=10000):
         (float): An approximation of the integral of f over the domain.
 
     Example:
-        # Define f(x,y) = 3x - 4y + y^2. Inputs are grouped into an array.
+        # Define f(x, y) = 3x - 4y + y^2. Inputs are grouped into an array.
         >>> f = lambda x: 3*x[0] - 4*x[1] + x[1]**2
 
-        # Integrate over the box [1,3]x[-2,1].
+        # Integrate over the box [1, 3]x[-2, 1].
         >>> mc_integrate(f, [1, -2], [3, 1])
         53.562651072181225              # The true value is 54.
     """
@@ -73,7 +73,7 @@ def mc_integrate(f, mins, maxs, N=10000):
 
 # Problem 4
 def prob4():
-    """Let n=4 and Omega = [-3/2,3/4]x[0,1]x[0,1/2]x[0,1].
+    """Let n=4 and Omega = [-3/2, 3/4]x[0, 1]x[0, 1/2]x[0, 1].
     - Define the joint distribution f of n standard normal random variables.
     - Use SciPy to integrate f over Omega.
     - Get 20 integer values of N that are roughly logarithmically spaced from

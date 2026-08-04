@@ -23,8 +23,8 @@ class DiGraph:
         then calculate Ahat. Save Ahat and the labels as attributes.
 
         Parameters:
-            A ((n,n) ndarray): the adjacency matrix of a directed graph.
-                A[i,j] is the weight of the edge from node j to node i.
+            A ((n, n) ndarray): the adjacency matrix of a directed graph.
+                A[i, j] is the weight of the edge from node j to node i.
             labels (list(str)): labels for the n nodes in the graph.
                 If None, defaults to [0, 1, ..., n-1].
         """

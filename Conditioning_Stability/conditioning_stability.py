@@ -65,7 +65,7 @@ def eig_cond(A):
     """Approximate the condition numbers of the eigenvalue problem at A.
 
     Parameters:
-        A ((n,n) ndarray): A square matrix.
+        A ((n, n) ndarray): A square matrix.
 
     Returns:
         (float) The absolute condition number of the eigenvalue problem at A.
@@ -77,7 +77,7 @@ def eig_cond(A):
 # Problem 4
 def prob4(domain=[-100, 100, -100, 100], res=50):
     """Create a grid [x_min, x_max] x [y_min, y_max] with the given resolution. For each
-    entry (x,y) in the grid, find the relative condition number of the
+    entry (x, y) in the grid, find the relative condition number of the
     eigenvalue problem, using the matrix   [[1, x], [y, 1]]  as the input.
     Use plt.pcolormesh() to plot the condition number over the entire grid.
 

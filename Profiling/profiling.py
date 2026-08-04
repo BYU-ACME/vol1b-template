@@ -65,8 +65,8 @@ def nearest_column(A, x):
     """Find the index of the column of A that is closest to x.
 
     Parameters:
-        A ((m,n) ndarray)
-        x ((m, ) ndarray)
+        A ((m, n) ndarray)
+        x ((m,) ndarray)
 
     Returns:
         (int): The index of the column of A that is closest in norm to x.
@@ -81,8 +81,8 @@ def nearest_column_fast(A, x):
     Refrain from using any loops or list comprehensions.
 
     Parameters:
-        A ((m,n) ndarray)
-        x ((m, ) ndarray)
+        A ((m, n) ndarray)
+        x ((m,) ndarray)
 
     Returns:
         (int): The index of the column of A that is closest in norm to x.

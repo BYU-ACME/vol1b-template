@@ -21,7 +21,7 @@ def diag_dom(n, num_entries=None, as_sparse=False):
         as_sparse: If True, an equivalent sparse CSR matrix is returned.
 
     Returns:
-        A ((n,n) ndarray): A (n, n) strictly diagonally dominant matrix.
+        A ((n, n) ndarray): A (n, n) strictly diagonally dominant matrix.
     """
     if num_entries is None:
         num_entries = int(n**1.5) - n
@@ -44,8 +44,8 @@ def jacobi(A, b, tol=1e-8, maxiter=100):
     """Calculate the solution to the system Ax = b via the Jacobi Method.
 
     Parameters:
-        A ((n,n) ndarray): A square matrix.
-        b ((n ,) ndarray): A vector of length n.
+        A ((n, n) ndarray): A square matrix.
+        b ((n,) ndarray): A vector of length n.
         tol (float): The convergence tolerance.
         maxiter (int): The maximum number of iterations to perform.
 
@@ -117,7 +117,7 @@ def hot_plate(n, omega, tol=1e-8, maxiter=100, plot=False):
     Parameters:
         n (int): Determines the size of A and b.
             A is (n^2, n^2) and b is one-dimensional with n^2 entries.
-        omega (float in [0,1]): The relaxation factor.
+        omega (float in [0, 1]): The relaxation factor.
         tol (float): The iteration tolerance.
         maxiter (int): The maximum number of iterations.
         plot (bool): Whether or not to visualize the solution.
