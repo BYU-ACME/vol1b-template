@@ -9,6 +9,7 @@ import numpy as np
 from scipy import sparse
 from scipy import linalg as la
 from matplotlib import pyplot as plt
+rng = np.random.default_rng()
 
 # Helper function
 def diag_dom(n, num_entries=None, as_sparse=False):
@@ -27,9 +28,9 @@ def diag_dom(n, num_entries=None, as_sparse=False):
         num_entries = int(n**1.5) - n
     
     A = sparse.lil_matrix((n, n))
-    rows = np.random.choice(n, size=num_entries)
-    cols = np.random.choice(n, size=num_entries)
-    data = np.random.randint(-4, 4, size=num_entries)
+    rows = rng.choice(n, size=num_entries)
+    cols = rng.choice(n, size=num_entries)
+    data = rng.integers(-4, 4, size=num_entries)
 
     for i in range(num_entries):
         A[rows[i], cols[i]] = data[i]

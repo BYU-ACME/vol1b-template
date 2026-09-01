@@ -14,8 +14,9 @@ def test_matrix_cond():
 
 def test_ortho_matrix_cond():
     # Sets up the orthonormal matrices for testing
+    rng = np.random.default_rng()
     A = np.array([[1, 0], [0, 1]])
-    Q, R = sla.qr(np.random.random((4, 4)))
+    Q, R = sla.qr(rng.random((4, 4)))
     
     # Checks to make sure orthonormal matrices give a conditioning number of 1
     assert isclose(conditioning_stability.matrix_cond(A), 1), "Wrong conditioning number for identity matrix"

@@ -13,9 +13,11 @@ def test_gauss_seidel_sparse():
 
 def test_jacobi():
     # Runs the test for different values of n.
+    rng = np.random.default_rng()
+
     for n in range(1, 15):
         # Sets up the matrix and the vector.
-        b = np.random.random(n)
+        b = rng.random(n)
         A = iterative_solvers.diag_dom(n)
 
         # Finds the vector using the function.
